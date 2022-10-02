@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.secone{
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    
+}
+.head {
+    width: 50%;
+}
+.head p{
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    font-weight: normal;
+    font-family: 'Ubuntu', sans-serif;
+}
+.para{
+    width: 50%;
+
+}
+.para h4{
+    padding-top: 35px;
+}
+.para h4 a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.para h4 a:hover{
+    color: blue;
+}
+.upcom{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.headi{
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 5px 35px;
+    margin-bottom: 0px;
+}
+.catname{
+    padding: 10px 40px;
+
+}
+.owl-carousel .owl-item img {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+   
+}
+#product-slider p {
+    text-align: center;
+    color: black;
+}
+
+
+.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+    display: flex;
+    font-size: 0px;
+}
+
+.owl-carousel .owl-buttons{
+    position: relative;
+}
+.owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    left: -20px;
+    bottom: 225px;
+    padding:8px 17px;
+    background: #fff;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.owl-carousel .owl-nav button.owl-next{
+    position: absolute;
+    right: -20px;
+    bottom: 225px;
+    padding: 8px 17px;
+    background: #fff;
+    border-radius: 50px;
+    transition: .5s;
+}
+.owl-carousel .owl-nav button.owl-prev:after,.owl-carousel .owl-nav button.owl-next:after{
+    content: "\f104";
+    font-family: "FontAwesome";
+    color: #000;
+    font-size: 40px;
+    
+}
+.owl-carousel .owl-nav button.owl-next:after{
+    content: "\f105";
+
+}
+
+
+.pastcom{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#product1-slider p {
+    text-align: center;
+    color: black;
+}
+.currcom{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#product2-slider p {
+    text-align: center;
+    color: black;
+}
+@media screen and (max-width:600px){
+    .owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+        display: flex;
+        font-size: 0px;
+    }
+    
+    .owl-carousel .owl-buttons{
+        position: relative;
+    }
+    .owl-carousel .owl-nav button.owl-prev{
+        position: absolute;
+        left: 0px;
+        bottom: 225px;
+        padding:8px 17px;
+        background: #fff;
+        border-radius: 50px;
+        transition: .5s;
+    }
+    
+    .owl-carousel .owl-nav button.owl-next{
+        position: absolute;
+        right: 0px;
+        bottom: 225px;
+        padding: 8px 17px;
+        background: #fff;
+        border-radius: 50px;
+        transition: .5s;
+    }
+    .owl-carousel .owl-nav button.owl-prev:after,.owl-carousel .owl-nav button.owl-next:after{
+        content: "\f104";
+        font-family: "FontAwesome";
+        color: #000;
+        font-size: 40px;
+        
+    }
+    .owl-carousel .owl-nav button.owl-next:after{
+        content: "\f105";
+    
+    }
+    
+
+}
+@media screen and (min-width:1100px){
+    .owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+        display: flex;
+        font-size: 0px;
+    }
+    
+    .owl-carousel .owl-buttons{
+        position: relative;
+    }
+    .owl-carousel .owl-nav button.owl-prev{
+        position: absolute;
+        left: -40px;
+        bottom: 185px;
+        padding:8px 17px;
+        background: #fff;
+        border-radius: 50px;
+        transition: .5s;
+    }
+    
+    .owl-carousel .owl-nav button.owl-next{
+        position: absolute;
+        right: -40px;
+        bottom: 185px;
+        padding: 8px 17px;
+        background: #fff;
+        border-radius: 50px;
+        transition: .5s;
+    }
+    .owl-carousel .owl-nav button.owl-prev:after,.owl-carousel .owl-nav button.owl-next:after{
+        content: "\f104";
+        font-family: "FontAwesome";
+        color: #000;
+        font-size: 40px;
+        
+    }
+    .owl-carousel .owl-nav button.owl-next:after{
+        content: "\f105";
+    
+    }
+   
+}
+@media screen and (max-width:600px){
+    .h4, h4 {
+        font-size: 1.2rem;
+    }
+    .secone {
+        flex-direction: column;
+    }
+    
+}

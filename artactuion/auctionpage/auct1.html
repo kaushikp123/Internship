@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auct1</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="soloauctstyle.css">
+</head>
+<body>
+        <div class="header">
+            <div class="logo"><img src="../mainpage/contemporary.jpg" alt="logo"></div>
+            <div class="heading"><a><p class="headi">In auction</p><p> Hindman:Post War and Contemporary Art</p></a>
+            </div>
+        </div>
+    </div>
+    <div class="firstsec">    
+    <div class="leftside">
+        <div class="img">
+            <img src="./auct1.jpg" alt="img1">
+        </div>
+        <hr class="line">
+        <div class="about">
+            <h3 style="
+            padding: 40px;
+            text-decoration: underline;
+        ">About the work</h3>
+        <div class="box">
+            <div class="typeofart"><p class="ablogo">H</p><p style="padding: 11px 14px;font-weight: 550;">Hindmen</p></div>
+        
+        <div class="big"></div>
+            <div class="part1">
+                <p>medium</p><a href="#">painting</a>
+            </div>
+            <div class="part2">
+                <p class="s1">Signature</p><p class="s2">Each with the embossed signature</p>
+            </div>
+            
+        </div>
+        <div class="box1">
+            <div class="abauth">
+                <div class="logo"><img src="./auct4.jpg" alt="logo"></div>
+                <p>Kaushik</p>
+            </div>
+            <p class="indian">Indain(1990-2015) </p>
+            <br>
+            <br>
+            <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas inventore sint porro repellendus veritatis repellat fugiat corrupti alias sit itaque accusamus, optio qui iste consequuntur soluta a quis hic ducimus ad. Consectetur, tenetur quam sit iure dicta minima a praesentium soluta possimus itaque sint nobis tempora unde sequi nulla ipsum quos iste quisquam quidem maxime! Nam voluptate sequi iste explicabo necessitatibus! Laboriosam quia blanditiis perspiciatis sit aspernatur officiis nulla voluptas culpa dicta! Tenetur sequi rerum, voluptatibus nam temporibus sunt amet, dignissimos eos dolores sint excepturi veniam consequuntur placeat voluptatem. Aspernatur id laudantium molestias laboriosam? Excepturi laborum quam ratione quia magnam?</p>
+            
+        </div>
+        </div>
+        </div>
+        
+        
+    <div class="rightside">
+        <a href="#">Kaushik p</a><br/>
+        <div class="follow"><i class="fa fa-plus" aria-hidden="true" style="border: 1px solid; border-radius: 50%; padding: 1px;"></i><p>Follow</p><br/></div>
+    <br>
+    <br>
+    <p class="spec">
+        Temple of Deep Blue & Cadmium #767, 1985<br/>
+        Acrylic on board<br/>
+        17 × 12 in<br/>
+        43.2 × 30.5 cm<br/>
+    </p>
+    <br>
+    <br>
+    <hr>
+    <p>
+    <br>
+        <h3>Starting Bid</h3>
+        <h3 class="bidno">
+            $12,000
+        </h3>
+        <br>
+        <br> <p class="terms">
+        This auction has a <a href="#">buyers premium.</a><br>
+        Shipping,taxes,and additional fees may apply. </p>
+
+    </p>
+    <br>
+    <hr>
+    <br>
+    <br>
+    Place max bid
+    <br>
+    <select id="bidvalue" name="bidvalue">
+      <option value="bidvalue1">$12,000</option>
+      <option value="bidvalue1">$12,500</option>
+      <option value="bidvalue1">$13,000</option>
+      <option value="bidvalue1">$13,500</option>
+      <option value="bidvalue1">$14,000</option>
+      <option value="bidvalue1">$14,500</option>
+      <option value="bidvalue1">$15,000</option>
+    </select>
+    <button class="mainbid">Bid</button>
+    <p id="countdown"></p>
+    <p class="live">
+        Live June 5th 2021,<br/>8:00am 
+    </p>
+    <hr>
+    <br>
+    <br>
+    <div class="terms1">
+        <p>
+            By placing your bid you agree to Artsy's and <a href="#">Hindman's Conditions of Sale.</a> 
+            <br>
+            Have a question? Read our <a href="#">auction FAQs</a> or <a href="#">ask a specialist.</a> 
+            <br>
+            Want to sell a work by this artist?<a href="#">Consign with Artsy.</a> 
+        </p>
+    </div>
+    
+    
+</div>
+
+<script>
+    let countDownDate = new Date("June 5, 2021 8:00:00").getTime();
+    let x = setInterval(function() {
+    
+      let now = new Date().getTime();
+        
+      let distance = countDownDate - now;
+        
+      let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s "; 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "BID CLOSED";
+      }
+    }, 1000);
+    </script>
+    
+</body>
+</html>
